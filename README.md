@@ -1,8 +1,8 @@
-Quick'n'dirty backup and restore scripts for Meteor sites.
+## Quick'n'dirty backup and restore scripts for Meteor
 
-Works for me (TM), but I take no responsability if it blows your data into oblivion.
+Works For Me™, but I take no responsability if it blows your data into oblivion.
 
-Usage:
+### Usage:
 
 Backup the local database ("meteor" needs to be running)
 
