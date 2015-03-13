@@ -3,7 +3,7 @@
 # License: WTFPL (http://www.wtfpl.net/txt/copying/)
 
 SITE="$1"
-OUTPUT="${2:-mongodb_${SITE:-local}_$(date +%m%d%y_%H%M)}"
+OUTPUT="${2:-mongodb_${SITE:-local}_$(date +%y%m%d_%H%M)}"
 
 URL=$(meteor mongo --url $SITE)
 if [[ "$URL" =~ ^.*://((.*):(.*)@)?(.*:.*)/(.*)$ ]]; then
