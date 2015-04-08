@@ -20,6 +20,6 @@ echo "Backing up ${SITE:-local} to ${OUTPUT}..."
 
 [ -n "$USER" ] && cmd_user="-u $USER"
 [ -n "$PASSWORD" ] && cmd_pass="-p $PASSWORD"
-cmd="mongodump $cmd_user $cmd_pass -h $HOST -d $DATABASE -out $OUTPUT"
+cmd="mongodump $cmd_user $cmd_pass -h $HOST -d $DATABASE -o $OUTPUT"
 echo "Running '${cmd}'..."
 $cmd
